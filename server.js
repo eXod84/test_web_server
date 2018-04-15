@@ -39,6 +39,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    Title: 'Project page',
+  });
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     errorMessage: 'Something bad.'
